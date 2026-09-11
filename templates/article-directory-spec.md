@@ -43,7 +43,7 @@ summary: One sentence — what this file is and what it's for.
 | `img/` | dir | Numbered screenshots for the article, plus `readme.md` tracking what's captured, what's missing, and capture guards. |
 | `sessions/` | dir | Session-log evidence files a claim in `outline.md` can be checked against, plus `readme.md`. May be raw or cleaned — see the `clean-session` skill for turning a raw terminal export into a readable transcript. |
 | `transcripts/` | dir | Cleaned, personal transcripts specific to this article's research and drafting. |
-| `working-files/` | dir | Active in-progress working material. Empty is normal — it only holds something when work is actually in progress. |
+| `working-files/` | dir | Active in-progress working material — e.g. a `research-brief.md`. Created empty and filled in as work progresses. |
 
 ## `img/` contents
 
@@ -61,6 +61,6 @@ A folder inherited from before this spec, or scratch material that hasn't been s
 
 1. Name it `{YYMMDD}-{slug}`.
 2. Add `outline.md` and `manifest.md` first.
-3. Add `img/`, `sessions/`, `transcripts/`, `working-files/` as they're actually needed — don't pre-create empty ones speculatively beyond `working-files/`, which is expected to start empty.
+3. Create all four standard directories up front — `img/`, `sessions/`, `transcripts/`, `working-files/` — even if empty, so there's always a place to drop a file in as work progresses. An empty one is expected, not a gap.
 4. Give every subdirectory that holds more than a couple of files a `readme.md`.
 5. Don't add a `.gitkeep` to an empty directory to force it into the repo. If it's empty, it stays out of git — that's expected, not a gap to paper over.

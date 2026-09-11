@@ -17,10 +17,10 @@ Defines what's in this article folder. "Root" below means this article folder, n
 | --- | --- | --- |
 | `outline.md` | file | Working outline for the article. |
 | `manifest.md` | file | This file. |
-| `img/` | dir | Screenshots, plus `readme.md`. |
-| `sessions/` | dir | Session-log evidence files, plus `readme.md`. |
-| `transcripts/` | dir | Cleaned personal transcripts specific to this article. |
-| `working-files/` | dir | Active in-progress working material. <!-- Remove this row if not present yet. --> |
+| `img/` | dir | Screenshots, plus `readme.md`. Created even if empty. |
+| `sessions/` | dir | Session-log evidence files, plus `readme.md`. Created even if empty. |
+| `transcripts/` | dir | Cleaned personal transcripts specific to this article. Created even if empty. |
+| `working-files/` | dir | Active in-progress working material (e.g. `research-brief.md`). Created even if empty. |
 | `misplaced/` | dir | Inherited/unsorted material pending triage. <!-- Remove this row if not present. --> Not part of the standard shape — see `templates/article-directory-spec.md`. |
 
 <!-- Add a row for anything else actually present, and delete any row above that isn't. -->
