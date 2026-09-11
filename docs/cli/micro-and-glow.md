@@ -6,7 +6,7 @@ micro and glow cover opposite halves of working with Markdown in the terminal: g
 
 ## Setting up the integration
 
-The handoff runs on `$EDITOR` — it's what glow's pager launches when you press `e`. The simplest setup is `export EDITOR=micro` in your shell profile, but that makes micro the default editor for *every* program that reads `$EDITOR`, not just glow: `git commit`, `gh pr create`, `crontab -e`, `sudoedit`, and anything else that shells out for text input, in every terminal session, including ones an IDE opens for you.
+The handoff runs on `$EDITOR` — it's what glow's pager launches when you press `e`. The simplest setup is `export EDITOR=micro` in your shell profile, but that makes micro the default editor for _every_ program that reads `$EDITOR`, not just glow: `git commit`, `gh pr create`, `crontab -e`, `sudoedit`, and anything else that shells out for text input, in every terminal session, including ones an IDE opens for you.
 
 To get the glow ↔ micro handoff without any of that spillover, set `EDITOR` only for the single command that needs it, instead of exporting it globally. A shell function is the easiest way to do this:
 
@@ -56,7 +56,7 @@ type glowm
 ## Why this pairing works
 
 | Role | Tool | What it's good at |
-|---|---|---|
+| --- | --- | --- |
 | Reading | glow | Rendered headings, tables, code blocks, and word wrap — what a doc will actually look like. |
 | Writing | micro | Syntax highlighting for the raw Markdown source, multiple cursors, undo/redo, and familiar `Ctrl-S`/`Ctrl-Q` shortcuts. |
 | Handoff | `$EDITOR` | The one setting that lets glow call out to micro without either tool needing to know about the other. |

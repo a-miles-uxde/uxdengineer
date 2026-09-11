@@ -1,0 +1,7 @@
+brain/
+brain-2/
+projects/
+.remember/
+styles/
+.venv/
+uv.lock

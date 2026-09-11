@@ -76,7 +76,7 @@ git stash list
 ### Setup and config
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `git config --global user.name "<name>"` | Set the author name recorded on your commits. |
 | `git config --global user.email "<email>"` | Set the author email recorded on your commits. |
 | `git config --global --list` | Show all your global git settings. |
@@ -85,49 +85,49 @@ git stash list
 
 ### Everyday changes
 
-| Command | What it does |
-|---|---|
-| `git status` | Show changed, staged, and untracked files. |
-| `git add <file>` | Stage a file's changes for the next commit. |
-| `git add -p` | Choose individual chunks of changes to stage, one at a time. |
-| `git add .` | Stage all changes in the current folder and below. |
-| `git commit -m "<message>"` | Commit staged changes with a message. |
-| `git commit --amend` | Add staged changes to the last commit, or edit its message. |
-| `git restore <file>` | Discard unstaged changes to a file; they can't be recovered. |
-| `git restore --staged <file>` | Unstage a file but keep its changes. |
-| `git rm <file>` | Delete a file and stage the deletion. |
-| `git mv <old> <new>` | Rename or move a file and stage the change. |
+| Command                       | What it does                                                 |
+| ----------------------------- | ------------------------------------------------------------ |
+| `git status`                  | Show changed, staged, and untracked files.                   |
+| `git add <file>`              | Stage a file's changes for the next commit.                  |
+| `git add -p`                  | Choose individual chunks of changes to stage, one at a time. |
+| `git add .`                   | Stage all changes in the current folder and below.           |
+| `git commit -m "<message>"`   | Commit staged changes with a message.                        |
+| `git commit --amend`          | Add staged changes to the last commit, or edit its message.  |
+| `git restore <file>`          | Discard unstaged changes to a file; they can't be recovered. |
+| `git restore --staged <file>` | Unstage a file but keep its changes.                         |
+| `git rm <file>`               | Delete a file and stage the deletion.                        |
+| `git mv <old> <new>`          | Rename or move a file and stage the change.                  |
 
 ### Branches
 
-| Command | What it does |
-|---|---|
-| `git branch` | List local branches; the current one is marked with `*`. |
-| `git branch -a` | List local and remote-tracking branches. |
-| `git switch <branch>` | Switch to an existing branch. |
-| `git switch -c <branch>` | Create a new branch and switch to it. |
-| `git merge <branch>` | Merge another branch's commits into the current branch. |
-| `git rebase <branch>` | Replay your commits on top of another branch for a linear history. |
-| `git branch -d <branch>` | Delete a branch that has been merged. |
-| `git branch -D <branch>` | Force-delete a branch, even with unmerged commits. |
+| Command                  | What it does                                                       |
+| ------------------------ | ------------------------------------------------------------------ |
+| `git branch`             | List local branches; the current one is marked with `*`.           |
+| `git branch -a`          | List local and remote-tracking branches.                           |
+| `git switch <branch>`    | Switch to an existing branch.                                      |
+| `git switch -c <branch>` | Create a new branch and switch to it.                              |
+| `git merge <branch>`     | Merge another branch's commits into the current branch.            |
+| `git rebase <branch>`    | Replay your commits on top of another branch for a linear history. |
+| `git branch -d <branch>` | Delete a branch that has been merged.                              |
+| `git branch -D <branch>` | Force-delete a branch, even with unmerged commits.                 |
 
 ### Viewing history
 
-| Command | What it does |
-|---|---|
-| `git log --oneline --graph` | Show commit history compactly, with a branch graph. |
-| `git log -p <file>` | Show every change made to a file, commit by commit. |
-| `git show <commit>` | Show a commit's message and changes. |
-| `git diff` | Show unstaged changes. |
-| `git diff --staged` | Show staged changes that will go into the next commit. |
-| `git diff main...<branch>` | Show what a branch changed since it split from main. |
-| `git blame <file>` | Show who last changed each line of a file, and when. |
-| `git reflog` | List where HEAD has been; helps recover "lost" commits. |
+| Command                     | What it does                                            |
+| --------------------------- | ------------------------------------------------------- |
+| `git log --oneline --graph` | Show commit history compactly, with a branch graph.     |
+| `git log -p <file>`         | Show every change made to a file, commit by commit.     |
+| `git show <commit>`         | Show a commit's message and changes.                    |
+| `git diff`                  | Show unstaged changes.                                  |
+| `git diff --staged`         | Show staged changes that will go into the next commit.  |
+| `git diff main...<branch>`  | Show what a branch changed since it split from main.    |
+| `git blame <file>`          | Show who last changed each line of a file, and when.    |
+| `git reflog`                | List where HEAD has been; helps recover "lost" commits. |
 
 ### Remotes and syncing
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `git remote -v` | List remotes and their URLs. |
 | `git remote add origin <url>` | Connect a local repo to a remote named `origin`. |
 | `git fetch` | Download new commits from the remote without changing your files. |
@@ -140,7 +140,7 @@ git stash list
 ### Undoing things
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `git revert <commit>` | Make a new commit that undoes an earlier one; safe for shared history. |
 | `git reset --soft HEAD~1` | Undo the last commit but keep its changes staged. |
 | `git reset --hard <commit>` | Move the branch to a commit and discard all uncommitted changes. |
@@ -151,7 +151,7 @@ git stash list
 ### Tags
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `git tag` | List tags. |
 | `git tag -a <tag> -m "<message>"` | Create an annotated tag, typically marking a release version. |
 | `git push origin <tag>` | Upload one tag to the remote. |

@@ -7,7 +7,7 @@ Quick reference docs for the command-line tools used in this environment. Each f
 ## Contents
 
 | Tool | Description |
-|---|---|
+| --- | --- |
 | [brew](brew.md) | Homebrew, the package manager for macOS. |
 | [direnv](direnv.md) | Loads and unloads environment variables per directory. |
 | [gh](gh.md) | GitHub's official command-line tool. |
@@ -17,7 +17,9 @@ Quick reference docs for the command-line tools used in this environment. Each f
 | [just](just.md) | Command runner for project recipes. |
 | [micro](micro.md) | Modern, terminal-based text editor. |
 | [micro + glow](micro-and-glow.md) | How micro and glow work together to edit and preview Markdown. |
+| [node](node.md) | Node.js runtime, npm, and npx. |
 | [pre-commit](pre-commit.md) | Manages and runs Git hooks from a shared config. |
+| [prettier](prettier.md) | Opinionated formatter for Markdown, YAML, JSON, and more. |
 | [pyright](pyright.md) | Static type checker for Python. |
 | [pytest](pytest.md) | Test runner for Python. |
 | [ruff](ruff.md) | Extremely fast Python linter and formatter. |

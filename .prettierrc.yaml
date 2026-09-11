@@ -1,0 +1,66 @@
+# Full Prettier config with every option spelled out (including defaults) so
+# it's easy to see what's available and tweak later. Only override in this
+# project: proseWrap.
+
+# Line length prettier tries to wrap at.
+printWidth: 100
+
+# Spaces per indentation level.
+tabWidth: 2
+
+# Indent with tabs instead of spaces.
+useTabs: false
+
+# Print semicolons at the ends of statements.
+semi: true
+
+# Use single quotes instead of double quotes.
+singleQuote: false
+
+# When to quote object property keys: "as-needed" | "consistent" | "preserve".
+quoteProps: as-needed
+
+# Use single quotes instead of double quotes in JSX.
+jsxSingleQuote: false
+
+# Print trailing commas wherever valid in multi-line structures: "all" | "es5" | "none".
+trailingComma: all
+
+# Print spaces between brackets in object literals.
+bracketSpacing: true
+
+# Put the `>` of a multi-line JSX/HTML element on the last line instead of its own.
+bracketSameLine: false
+
+# Include parens around a sole arrow-function parameter: "always" | "avoid".
+arrowParens: always
+
+# How to wrap Markdown prose: "always" | "never" | "preserve".
+# Set to "never" (default is "preserve") so prose has no hard line breaks and
+# flows/reflows with the reader's window width instead of prettier's own wrapping.
+proseWrap: never
+
+# How whitespace is treated in HTML: "css" | "strict" | "ignore".
+htmlWhitespaceSensitivity: css
+
+# Indent <script> and <style> tags in Vue files.
+vueIndentScriptAndStyle: false
+
+# Line ending style: "lf" | "crlf" | "cr" | "auto".
+endOfLine: lf
+
+# Format code embedded in strings, e.g. CSS-in-JS: "auto" | "off".
+embeddedLanguageFormatting: auto
+
+# Enforce one attribute per line in HTML, Vue, and JSX.
+singleAttributePerLine: false
+
+# How to wrap object literals: "preserve" | "collapse".
+objectWrap: preserve
+
+# Use Prettier's newer ternary formatting rather than keeping `?`/`:` on the
+# consequent's line.
+experimentalTernaries: false
+
+# Where to print operators when a binary expression wraps: "start" | "end".
+experimentalOperatorPosition: end

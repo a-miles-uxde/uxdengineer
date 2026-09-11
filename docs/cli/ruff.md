@@ -60,7 +60,7 @@ ruff config
 ### Linting
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `ruff check .` | Lint the current directory and report violations. |
 | `ruff check --fix .` | Apply safe auto-fixes for fixable violations. |
 | `ruff check --unsafe-fixes .` | Also apply fixes that may change behavior, not just style. |
@@ -74,7 +74,7 @@ ruff config
 ### Formatting
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `ruff format .` | Reformat all files in place. |
 | `ruff format --check .` | Exit non-zero if any file isn't already formatted, without writing changes. |
 | `ruff format --diff .` | Print the formatting diff without writing changes. |
@@ -82,7 +82,7 @@ ruff config
 ### Rules and configuration
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `ruff rule <CODE>` | Explain what a specific rule checks for. |
 | `ruff rule --all` | List and explain every available rule. |
 | `ruff linter` | List all upstream linters ruff reimplements (pyflakes, pycodestyle, isort, etc.) and their rule prefixes. |
@@ -92,7 +92,7 @@ ruff config
 ### Maintenance
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `ruff version` | Print the installed ruff version. |
 | `ruff clean` | Clear ruff's cache in the current directory tree. |
 | `ruff check --add-noqa .` | Insert `# noqa` comments for existing violations instead of fixing them. |

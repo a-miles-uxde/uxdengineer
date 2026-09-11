@@ -54,7 +54,7 @@ direnv prune
 direnv refuses to load an `.envrc` it hasn't seen approved, so a stray or malicious file in a repo you `cd` into can't silently run code.
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `direnv allow [path]` | Approve the current (or given) `.envrc`/`.env` so it loads on `cd`. |
 | `direnv deny [path]` | Revoke approval; the file will no longer be loaded. |
 | `direnv status` | Show whether the current directory has an `.envrc`, whether it's allowed, and what's currently loaded. |
@@ -62,7 +62,7 @@ direnv refuses to load an `.envrc` it hasn't seen approved, so a stray or malici
 ### Editing and reloading
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `direnv edit [path]` | Open `.envrc` in `$EDITOR` and re-allow it automatically after saving. |
 | `direnv reload` | Re-evaluate the current directory's `.envrc` without leaving and re-entering it. |
 | `direnv exec <dir> <command>` | Run a command with the environment from `<dir>`'s `.envrc`, without `cd`-ing there. |
@@ -70,7 +70,7 @@ direnv refuses to load an `.envrc` it hasn't seen approved, so a stray or malici
 ### Inspecting state
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `direnv export <shell>` | Print the environment diff direnv would apply, for a given shell format (used internally by the hook). |
 | `direnv stdlib` | Print the helper functions available inside `.envrc` (`use`, `layout`, `dotenv`, etc.). |
 | `direnv prune` | Remove cached "allowed" records for `.envrc` files that no longer exist on disk. |
@@ -78,6 +78,6 @@ direnv refuses to load an `.envrc` it hasn't seen approved, so a stray or malici
 ### Shell setup
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `direnv hook <shell>` | Print the shell integration snippet for `bash`, `zsh`, `fish`, etc. — what gets `eval`'d in your rc file. |
 | `direnv version` | Print the installed direnv version. |

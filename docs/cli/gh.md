@@ -72,19 +72,19 @@ gh extension upgrade --all
 
 ### Authentication
 
-| Command | What it does |
-|---|---|
-| `gh auth login` | Sign in to GitHub through the browser or with a token. |
-| `gh auth status` | Show which accounts are signed in and their token scopes. |
+| Command                      | What it does                                                      |
+| ---------------------------- | ----------------------------------------------------------------- |
+| `gh auth login`              | Sign in to GitHub through the browser or with a token.            |
+| `gh auth status`             | Show which accounts are signed in and their token scopes.         |
 | `gh auth refresh -s <scope>` | Add permission scopes to your existing login, e.g. `delete_repo`. |
-| `gh auth setup-git` | Make `git` use your gh login for GitHub over HTTPS. |
-| `gh auth switch` | Switch the active account when signed in to several. |
-| `gh auth logout` | Sign out and remove the stored token. |
+| `gh auth setup-git`          | Make `git` use your gh login for GitHub over HTTPS.               |
+| `gh auth switch`             | Switch the active account when signed in to several.              |
+| `gh auth logout`             | Sign out and remove the stored token.                             |
 
 ### Repositories
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `gh repo create <name> --public --clone` | Create a public GitHub repo and clone it into the current folder. |
 | `gh repo clone <owner>/<repo>` | Clone a GitHub repo using just its owner and name. |
 | `gh repo fork <owner>/<repo> --clone` | Fork someone else's repo to your account and clone your fork. |
@@ -97,7 +97,7 @@ gh extension upgrade --all
 ### Pull requests
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `gh pr create` | Open a pull request for the current branch, prompting for details. |
 | `gh pr create --draft` | Open a draft pull request that can't be merged yet. |
 | `gh pr list` | List open pull requests in the repo. |
@@ -114,7 +114,7 @@ gh extension upgrade --all
 ### Issues
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `gh issue create` | Open a new issue, prompting for title and body. |
 | `gh issue list` | List open issues in the repo. |
 | `gh issue list --assignee @me` | List open issues assigned to you. |
@@ -127,7 +127,7 @@ gh extension upgrade --all
 ### GitHub Actions
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `gh run list` | List recent workflow runs and their results. |
 | `gh run watch` | Follow a running workflow live until it finishes. |
 | `gh run view <run-id> --log-failed` | Show logs only from the failed steps of a run. |
@@ -140,7 +140,7 @@ gh extension upgrade --all
 ### Releases
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `gh release create <tag> --generate-notes` | Create a release, auto-writing notes from merged pull requests. |
 | `gh release list` | List the repo's releases. |
 | `gh release view <tag>` | Show a release's notes and assets. |
@@ -148,18 +148,18 @@ gh extension upgrade --all
 
 ### Search and browse
 
-| Command | What it does |
-|---|---|
-| `gh browse` | Open the current repo in your browser. |
-| `gh browse <file>` | Open a specific file from the repo on github.com. |
-| `gh search repos <query>` | Search all of GitHub for repositories. |
-| `gh search issues <query>` | Search issues across GitHub. |
-| `gh search prs <query>` | Search pull requests across GitHub. |
+| Command                    | What it does                                      |
+| -------------------------- | ------------------------------------------------- |
+| `gh browse`                | Open the current repo in your browser.            |
+| `gh browse <file>`         | Open a specific file from the repo on github.com. |
+| `gh search repos <query>`  | Search all of GitHub for repositories.            |
+| `gh search issues <query>` | Search issues across GitHub.                      |
+| `gh search prs <query>`    | Search pull requests across GitHub.               |
 
 ### Gists, API, and configuration
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `gh gist create <file>` | Upload a file as a secret gist; add `--public` to share it publicly. |
 | `gh api <endpoint>` | Call any GitHub REST API endpoint using your login, e.g. `user`. |
 | `gh alias set <alias> '<expansion>'` | Create a shortcut, e.g. `gh alias set mine 'pr list --author @me'`. |

@@ -54,7 +54,7 @@ pyright --stats
 ### Checking code
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pyright` | Type-check the project using the nearest config (`pyproject.toml` or `pyrightconfig.json`). |
 | `pyright <path>` | Type-check only the given file(s) or directory. |
 | `pyright -w`, `pyright --watch` | Re-check automatically whenever a file changes. |
@@ -63,7 +63,7 @@ pyright --stats
 ### Targeting a specific environment
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pyright --pythonversion <version>` | Analyze as if running under a specific Python version, e.g. `3.12`. |
 | `pyright --pythonplatform <platform>` | Analyze for a specific platform: `Darwin`, `Linux`, `Windows`, `iOS`, `Android`. |
 | `pyright -v <dir>`, `pyright --venvpath <dir>` | Directory containing virtual environments to resolve imports against. |
@@ -72,18 +72,18 @@ pyright --stats
 ### Type completeness
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pyright --verifytypes <package>` | Report how completely a `py.typed` package is annotated. |
 | `pyright --ignoreexternal` | When verifying types, ignore issues from external (non-local) imports. |
 | `pyright --createstub <import>` | Generate a type stub file for a module. |
 
 ### Output and diagnostics
 
-| Command | What it does |
-|---|---|
-| `pyright --level <level>` | Set the minimum diagnostic level shown: `error` or `warning`. |
-| `pyright --warnings` | Exit with status 1 if any warnings are reported, not just errors. |
-| `pyright --outputjson` | Print results as JSON instead of text. |
-| `pyright --stats` | Print detailed performance statistics after checking. |
-| `pyright --dependencies` | Emit import dependency information. |
-| `pyright --version` | Print the installed pyright version. |
+| Command                   | What it does                                                      |
+| ------------------------- | ----------------------------------------------------------------- |
+| `pyright --level <level>` | Set the minimum diagnostic level shown: `error` or `warning`.     |
+| `pyright --warnings`      | Exit with status 1 if any warnings are reported, not just errors. |
+| `pyright --outputjson`    | Print results as JSON instead of text.                            |
+| `pyright --stats`         | Print detailed performance statistics after checking.             |
+| `pyright --dependencies`  | Emit import dependency information.                               |
+| `pyright --version`       | Print the installed pyright version.                              |

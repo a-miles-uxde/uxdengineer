@@ -51,7 +51,7 @@ vale --output=JSON articles docs
 ### Linting
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `vale <path...>` | Lint one or more files or directories against the styles configured for them in `.vale.ini`. |
 | `vale -` | Lint content piped in on stdin. |
 | `vale --ext=<ext> -` | Tell vale what syntax to assume for stdin input, e.g. `--ext=.md`. |
@@ -60,7 +60,7 @@ vale --output=JSON articles docs
 ### Filtering results
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `vale --minAlertLevel=<level>` | Only show alerts at or above a level: `suggestion`, `warning`, or `error`. |
 | `vale --filter='<expr>'` | Filter results by an expression, e.g. `--filter='.Name == "alex.Race"'`. |
 | `vale --output=JSON <path>` | Print results as JSON instead of the default line-oriented text. |
@@ -69,7 +69,7 @@ vale --output=JSON articles docs
 ### Styles and configuration
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `vale sync` | Download and install the styles listed in `Packages =` in `.vale.ini`. |
 | `vale ls-config` | Print the fully resolved configuration as JSON. |
 | `vale ls-dirs` | Print the directories vale searches for global config and styles. |
@@ -79,7 +79,7 @@ vale --output=JSON articles docs
 ### Diagnostics
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `vale ls-metrics <file>` | Print internal metrics (word count, reading time, etc.) for a file. |
 | `vale ls-vars` | List environment variables vale reads, e.g. `VALE_CONFIG_PATH`. |
 | `vale --no-exit` | Return exit code 0 even if alerts were found — useful in CI steps that shouldn't hard-fail. |

@@ -2,7 +2,7 @@
 
 ## Summary
 
-Homebrew is the package manager for macOS. It installs command-line tools (called *formulae*, like `git` and `gh`) and desktop apps (called *casks*, like Google Chrome), and keeps them up to date. On this Mac it lives in `/opt/homebrew`, and `~/.zprofile` adds it to your PATH.
+Homebrew is the package manager for macOS. It installs command-line tools (called _formulae_, like `git` and `gh`) and desktop apps (called _casks_, like Google Chrome), and keeps them up to date. On this Mac it lives in `/opt/homebrew`, and `~/.zprofile` adds it to your PATH.
 
 ## Daily and weekly commands
 
@@ -69,17 +69,17 @@ brew doctor
 
 ### Finding packages
 
-| Command | What it does |
-|---|---|
-| `brew search <text>` | Search formulae and casks by name or description. |
+| Command               | What it does                                                           |
+| --------------------- | ---------------------------------------------------------------------- |
+| `brew search <text>`  | Search formulae and casks by name or description.                      |
 | `brew info <package>` | Show version, dependencies, install status, and caveats for a package. |
-| `brew desc <formula>` | Print a one-line description of a formula. |
-| `brew home <package>` | Open the package's homepage in your browser. |
+| `brew desc <formula>` | Print a one-line description of a formula.                             |
+| `brew home <package>` | Open the package's homepage in your browser.                           |
 
 ### Installing and removing
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `brew install <formula>` | Install a command-line tool and its dependencies. |
 | `brew install --cask <app>` | Install a macOS app into `/Applications`. |
 | `brew reinstall <package>` | Uninstall and install a package again, useful when it seems broken. |
@@ -89,20 +89,20 @@ brew doctor
 
 ### Updating
 
-| Command | What it does |
-|---|---|
-| `brew update` | Fetch the newest Homebrew and package definitions; installs nothing. |
-| `brew outdated` | List installed packages with newer versions available. |
-| `brew upgrade` | Upgrade all outdated formulae and casks. |
-| `brew upgrade <package>` | Upgrade only the named package. |
-| `brew upgrade --greedy` | Also upgrade self-updating apps that a plain upgrade skips. |
-| `brew pin <formula>` | Hold a formula at its current version during upgrades. |
-| `brew unpin <formula>` | Allow a pinned formula to upgrade again. |
+| Command                  | What it does                                                         |
+| ------------------------ | -------------------------------------------------------------------- |
+| `brew update`            | Fetch the newest Homebrew and package definitions; installs nothing. |
+| `brew outdated`          | List installed packages with newer versions available.               |
+| `brew upgrade`           | Upgrade all outdated formulae and casks.                             |
+| `brew upgrade <package>` | Upgrade only the named package.                                      |
+| `brew upgrade --greedy`  | Also upgrade self-updating apps that a plain upgrade skips.          |
+| `brew pin <formula>`     | Hold a formula at its current version during upgrades.               |
+| `brew unpin <formula>`   | Allow a pinned formula to upgrade again.                             |
 
 ### Inspecting what's installed
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `brew list` | List all installed formulae and casks. |
 | `brew list --cask` | List installed apps only. |
 | `brew leaves` | List formulae you installed directly, not pulled in as dependencies. |
@@ -114,7 +114,7 @@ brew doctor
 ### Background services
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `brew services list` | Show managed background services and whether they're running. |
 | `brew services start <formula>` | Start a service now and at every login, e.g. `herdr`. |
 | `brew services stop <formula>` | Stop a service and keep it from starting at login. |
@@ -123,19 +123,19 @@ brew doctor
 
 ### Taps and Brewfiles
 
-| Command | What it does |
-|---|---|
-| `brew tap` | List third-party repositories ("taps") Homebrew installs from. |
-| `brew tap <user>/<repo>` | Add a third-party tap so its packages become installable. |
-| `brew untap <user>/<repo>` | Remove a tap. |
-| `brew bundle dump` | Write everything installed to a `Brewfile` in the current folder. |
-| `brew bundle install` | Install everything listed in the current folder's `Brewfile`. |
-| `brew bundle check` | Report whether everything in the `Brewfile` is installed. |
+| Command                    | What it does                                                      |
+| -------------------------- | ----------------------------------------------------------------- |
+| `brew tap`                 | List third-party repositories ("taps") Homebrew installs from.    |
+| `brew tap <user>/<repo>`   | Add a third-party tap so its packages become installable.         |
+| `brew untap <user>/<repo>` | Remove a tap.                                                     |
+| `brew bundle dump`         | Write everything installed to a `Brewfile` in the current folder. |
+| `brew bundle install`      | Install everything listed in the current folder's `Brewfile`.     |
+| `brew bundle check`        | Report whether everything in the `Brewfile` is installed.         |
 
 ### Maintenance and troubleshooting
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `brew cleanup` | Remove old package versions and stale downloads. |
 | `brew cleanup -n` | Preview what `brew cleanup` would delete, without deleting anything. |
 | `brew doctor` | Check for common setup problems and suggest fixes. |

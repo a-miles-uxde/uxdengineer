@@ -64,7 +64,7 @@ micro -clean
 ### Opening files
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `micro <file>` | Open a file, creating it if it doesn't exist. |
 | `micro <file>:<line>:<col>` | Open a file at a specific line and column (needs `parsecursor` on). |
 | `micro <file> +<line>` | Open a file with the cursor on a specific line. |
@@ -73,29 +73,29 @@ micro -clean
 
 ### Editing
 
-| Shortcut | What it does |
-|---|---|
-| `Ctrl-S` | Save the current file. |
-| `Ctrl-Z` / `Ctrl-Y` | Undo / redo. |
-| `Ctrl-C` / `Ctrl-V` | Copy / paste. |
-| `Ctrl-X` | Cut the current selection. |
-| `Ctrl-K` | Cut the current line. |
-| `Ctrl-A` | Select the whole buffer. |
-| `Ctrl-D` | Duplicate the current line. |
+| Shortcut            | What it does                |
+| ------------------- | --------------------------- |
+| `Ctrl-S`            | Save the current file.      |
+| `Ctrl-Z` / `Ctrl-Y` | Undo / redo.                |
+| `Ctrl-C` / `Ctrl-V` | Copy / paste.               |
+| `Ctrl-X`            | Cut the current selection.  |
+| `Ctrl-K`            | Cut the current line.       |
+| `Ctrl-A`            | Select the whole buffer.    |
+| `Ctrl-D`            | Duplicate the current line. |
 
 ### Navigating and searching
 
-| Shortcut | What it does |
-|---|---|
-| `Ctrl-F` | Open the find bar. |
-| `Ctrl-N` / `Ctrl-P` | Jump to the next / previous search match. |
-| `Ctrl-G` | Open the in-editor help. |
-| `Ctrl-Q` | Quit (prompts to save if there are unsaved changes). |
+| Shortcut            | What it does                                         |
+| ------------------- | ---------------------------------------------------- |
+| `Ctrl-F`            | Open the find bar.                                   |
+| `Ctrl-N` / `Ctrl-P` | Jump to the next / previous search match.            |
+| `Ctrl-G`            | Open the in-editor help.                             |
+| `Ctrl-Q`            | Quit (prompts to save if there are unsaved changes). |
 
 ### Multiple cursors and splits
 
 | Shortcut | What it does |
-|---|---|
+| --- | --- |
 | `Alt-N` | Spawn a new cursor at the next occurrence of the selected text. |
 | `Ctrl-Alt-Up` / `Ctrl-Alt-Down` | Spawn a new cursor directly above / below the current one. |
 | `Ctrl-W` | Move focus to the next split. |
@@ -106,7 +106,7 @@ micro -clean
 Press `Ctrl-E`, then type one of these:
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `save` | Save the current buffer, same as `Ctrl-S`. |
 | `quit` | Close the current tab or split. |
 | `replace <search> <replacement>` | Find and replace in the current buffer. |
@@ -119,18 +119,18 @@ Press `Ctrl-E`, then type one of these:
 
 ### Plugins
 
-| Command | What it does |
-|---|---|
-| `micro -plugin available` | List plugins available to install. |
-| `micro -plugin install <plugin>` | Install a plugin. |
-| `micro -plugin list` | List installed plugins. |
-| `micro -plugin update` | Update all installed plugins (or a named one). |
-| `micro -plugin remove <plugin>` | Remove a plugin. |
+| Command                          | What it does                                   |
+| -------------------------------- | ---------------------------------------------- |
+| `micro -plugin available`        | List plugins available to install.             |
+| `micro -plugin install <plugin>` | Install a plugin.                              |
+| `micro -plugin list`             | List installed plugins.                        |
+| `micro -plugin update`           | Update all installed plugins (or a named one). |
+| `micro -plugin remove <plugin>`  | Remove a plugin.                               |
 
 ### Configuration
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `micro -options` | List every configuration option and its default value. |
 | `micro -<option> <value>` | Override an option for just this session, e.g. `micro -syntax off file.c`. |
 | `micro -clean` | Reset `~/.config/micro` to its defaults. |

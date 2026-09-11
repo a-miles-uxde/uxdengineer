@@ -63,7 +63,7 @@ uv python pin 3.12
 ### Project setup
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `uv init` | Create a new project (`pyproject.toml`, `.python-version`, a starter file) in the current directory. |
 | `uv init --lib` | Create a project set up as an importable library. |
 | `uv init --script` | Create a single-file script with inline dependency metadata instead of a full project. |
@@ -72,7 +72,7 @@ uv python pin 3.12
 ### Dependencies
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `uv add <package>` | Add a dependency to `pyproject.toml` and update `uv.lock`. |
 | `uv add --dev <package>` | Add a dependency to the `dev` dependency group only. |
 | `uv remove <package>` | Remove a dependency from the project. |
@@ -83,7 +83,7 @@ uv python pin 3.12
 ### Running code
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `uv run <command>` | Run a command inside the project's venv, syncing first if the lockfile is out of date. |
 | `uv run python` | Start a Python REPL inside the project's venv. |
 | `uv run --with <package> <command>` | Run a command with an extra, ad-hoc dependency available, without adding it to the project. |
@@ -92,7 +92,7 @@ uv python pin 3.12
 ### Python version management
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `uv python list` | List Python versions uv knows about, installed or downloadable. |
 | `uv python install <version>` | Download and install a specific Python version. |
 | `uv python pin <version>` | Pin the project to a Python version via `.python-version`. |
@@ -102,7 +102,7 @@ uv python pin 3.12
 ### Standalone tools
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `uv tool install <package>` | Install a package's CLI entry points globally in an isolated environment (like `pipx install`). |
 | `uv tool run <package>` | Run a tool once without installing it (like `uvx`/`pipx run`). |
 | `uv tool list` | List installed tools. |
@@ -112,15 +112,15 @@ uv python pin 3.12
 ### pip-compatible interface
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `uv pip install <package>` | Install into the active environment using familiar pip syntax. |
 | `uv pip compile <requirements.in>` | Resolve requirements into a locked `requirements.txt`, without a `pyproject.toml` project. |
 
 ### Cache and maintenance
 
-| Command | What it does |
-|---|---|
-| `uv cache clean` | Clear uv's package cache. |
-| `uv self update` | Update uv itself to the latest version. |
-| `uv build` | Build the project into sdist/wheel distributions. |
-| `uv publish` | Upload built distributions to a package index. |
+| Command          | What it does                                      |
+| ---------------- | ------------------------------------------------- |
+| `uv cache clean` | Clear uv's package cache.                         |
+| `uv self update` | Update uv itself to the latest version.           |
+| `uv build`       | Build the project into sdist/wheel distributions. |
+| `uv publish`     | Upload built distributions to a package index.    |

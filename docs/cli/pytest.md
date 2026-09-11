@@ -61,7 +61,7 @@ pytest --collect-only
 ### Selecting tests
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pytest <path>` | Run only the tests in a given file or directory. |
 | `pytest -k <expr>` | Run tests whose name matches a substring expression, e.g. `-k "auth and not slow"`. |
 | `pytest -m <marker-expr>` | Run tests matching a marker expression, e.g. `-m "not slow"`. |
@@ -74,7 +74,7 @@ pytest --collect-only
 ### Output and reporting
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pytest -v` | Increase verbosity, printing each test's name and result. |
 | `pytest -q` | Decrease verbosity, printing a condensed summary. |
 | `pytest -r <chars>` | Show extra summary info for given outcomes, e.g. `-ra` for everything but passed. |
@@ -85,7 +85,7 @@ pytest --collect-only
 ### Debugging failures
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pytest -s` | Don't capture output; shortcut for `--capture=no`. Lets `print()` show live. |
 | `pytest -l`, `--showlocals` | Show local variable values in tracebacks. |
 | `pytest --pdb` | Drop into the interactive debugger on a failure or error. |
@@ -95,7 +95,7 @@ pytest --collect-only
 ### Collection
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pytest --collect-only` | List which tests would run, without running them. |
 | `pytest --ignore=<path>` | Skip a path during collection. |
 | `pytest --doctest-modules` | Also run doctests found in `.py` modules. |
@@ -104,7 +104,7 @@ pytest --collect-only
 ### Configuration
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pytest --fixtures` | List available fixtures, sorted by plugin. |
 | `pytest --markers` | List all registered markers (builtin, plugin, and project-defined). |
 | `pytest --cache-clear` | Clear pytest's cache (used by `--lf`/`--ff`) before running. |

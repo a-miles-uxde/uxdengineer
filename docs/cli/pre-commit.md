@@ -55,7 +55,7 @@ pre-commit gc
 ### Running hooks
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pre-commit run` | Run hooks against currently staged files. |
 | `pre-commit run --all-files` | Run hooks against every file in the repo. |
 | `pre-commit run <hook-id>` | Run only the named hook, e.g. `pre-commit run ruff-format`. |
@@ -66,7 +66,7 @@ pre-commit gc
 ### Installing and uninstalling
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pre-commit install` | Install the `pre-commit` hook into `.git/hooks/`, so it runs on every commit. |
 | `pre-commit install --install-hooks` | Install the hook and pre-fetch every hook environment in one step. |
 | `pre-commit install -t <hook-type>` | Install for a different Git hook stage, e.g. `pre-push` or `commit-msg`. |
@@ -76,7 +76,7 @@ pre-commit gc
 ### Updating hooks
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pre-commit autoupdate` | Bump every hook repo's `rev` in `.pre-commit-config.yaml` to its latest tag. |
 | `pre-commit autoupdate --bleeding-edge` | Update to each repo's `HEAD` instead of its latest tagged release. |
 | `pre-commit autoupdate --repo <repo>` | Only update one specific hook repo. |
@@ -84,7 +84,7 @@ pre-commit gc
 ### Config and maintenance
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pre-commit sample-config` | Print a starter `.pre-commit-config.yaml` to stdout. |
 | `pre-commit validate-config` | Check `.pre-commit-config.yaml` for schema errors. |
 | `pre-commit clean` | Remove cached hook environments, forcing a clean reinstall next run. |

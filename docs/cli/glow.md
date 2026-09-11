@@ -62,7 +62,7 @@ glow completion zsh
 ### Rendering Markdown
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `glow <file>` | Render a local Markdown file to the terminal. |
 | `glow <dir>` | Open the Markdown file picker rooted at a directory. |
 | `glow -` | Render Markdown piped in on stdin. |
@@ -73,7 +73,7 @@ glow completion zsh
 ### Styling and layout
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `glow -s <style>` | Set the color style: `auto`, `dark`, `light`, `notty`, or a path to a custom JSON stylesheet. |
 | `glow -w <width>` | Word-wrap output at a specific column width; `0` disables wrapping. |
 | `glow -l <file>` | Show line numbers (TUI mode only). |
@@ -82,33 +82,33 @@ glow completion zsh
 
 ### Browsing (TUI mode)
 
-| Command | What it does |
-|---|---|
-| `glow -t <dir>` | Force the full-screen TUI browser, even for a single file. |
-| `↑`/`k`, `↓`/`j` | Move the file selection up / down. |
-| `g` / `G` | Jump to the top / bottom of the list. |
-| `/` | Filter the file list by name. |
-| `Enter` | Open the selected file or directory. |
-| `Esc` / `Backspace` | Go back to the file list. |
-| `q` / `Ctrl-C` | Quit. |
+| Command             | What it does                                               |
+| ------------------- | ---------------------------------------------------------- |
+| `glow -t <dir>`     | Force the full-screen TUI browser, even for a single file. |
+| `↑`/`k`, `↓`/`j`    | Move the file selection up / down.                         |
+| `g` / `G`           | Jump to the top / bottom of the list.                      |
+| `/`                 | Filter the file list by name.                              |
+| `Enter`             | Open the selected file or directory.                       |
+| `Esc` / `Backspace` | Go back to the file list.                                  |
+| `q` / `Ctrl-C`      | Quit.                                                      |
 
 ### Reading a document (pager)
 
-| Key | What it does |
-|---|---|
-| `↑`/`k`, `↓`/`j` | Scroll up / down. |
-| `Space` / `b` | Page down / up. |
-| `g` / `G` | Jump to the top / bottom of the document. |
-| `/` | Search within the document. |
-| `n` | Jump to the next search match. |
-| `c` | Copy the document to the clipboard. |
-| `e` | Open the source file in `$EDITOR`. |
-| `q` / `Esc` | Return to the file list (or quit, if opened directly). |
+| Key              | What it does                                           |
+| ---------------- | ------------------------------------------------------ |
+| `↑`/`k`, `↓`/`j` | Scroll up / down.                                      |
+| `Space` / `b`    | Page down / up.                                        |
+| `g` / `G`        | Jump to the top / bottom of the document.              |
+| `/`              | Search within the document.                            |
+| `n`              | Jump to the next search match.                         |
+| `c`              | Copy the document to the clipboard.                    |
+| `e`              | Open the source file in `$EDITOR`.                     |
+| `q` / `Esc`      | Return to the file list (or quit, if opened directly). |
 
 ### Configuration
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `glow config` | Open `glow.yml` in `$EDITOR` to change defaults like style and width. |
 | `glow completion <shell>` | Print a completion script for `bash`, `zsh`, `fish`, or `powershell`. |
 | `glow -v` | Show the installed version. |
