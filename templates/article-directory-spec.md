@@ -41,7 +41,7 @@ summary: One sentence — what this file is and what it's for.
 | `outline.md` | file | Working outline — reader questions, reader takeaways, the step-by-step outline itself. |
 | `manifest.md` | file | This article's own manifest: what's actually in its folder, kept current as the folder changes. |
 | `img/` | dir | Numbered screenshots for the article, plus `readme.md` tracking what's captured, what's missing, and capture guards. |
-| `sessions/` | dir | Raw session-log evidence files (unedited transcripts a claim in `outline.md` can be checked against), plus `readme.md`. |
+| `sessions/` | dir | Session-log evidence files a claim in `outline.md` can be checked against, plus `readme.md`. May be raw or cleaned — see the `clean-session` skill for turning a raw terminal export into a readable transcript. |
 | `transcripts/` | dir | Cleaned, personal transcripts specific to this article's research and drafting. |
 | `working-files/` | dir | Active in-progress working material. Empty is normal — it only holds something when work is actually in progress. |
 
@@ -51,7 +51,7 @@ PNGs named `<date>-<time>-<step-number>-<slug>.png`, step numbers matching the o
 
 ## `sessions/` contents
 
-Raw session logs named per the file-naming convention above. `readme.md` (type: `readme`) explains what belongs here versus in `transcripts/`.
+Session logs named per the file-naming convention above, raw or cleaned. `readme.md` (type: `readme`) explains what belongs here versus in `transcripts/`.
 
 ## Not part of the standard shape
 
@@ -63,3 +63,4 @@ A folder inherited from before this spec, or scratch material that hasn't been s
 2. Add `outline.md` and `manifest.md` first.
 3. Add `img/`, `sessions/`, `transcripts/`, `working-files/` as they're actually needed — don't pre-create empty ones speculatively beyond `working-files/`, which is expected to start empty.
 4. Give every subdirectory that holds more than a couple of files a `readme.md`.
+5. Don't add a `.gitkeep` to an empty directory to force it into the repo. If it's empty, it stays out of git — that's expected, not a gap to paper over.
