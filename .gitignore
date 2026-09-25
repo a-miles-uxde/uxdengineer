@@ -55,3 +55,12 @@ Backups.backupdb
 .MobileBackups.trash
 MobileBackups.trash
 tmbootpicker.efi
+
+# Directories starting with an underscore, at any depth, and all their contents
+_*/
+
+# File types
+*.pdf
+*.zip
+*.pxd
+*.wav
